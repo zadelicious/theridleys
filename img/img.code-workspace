@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../jquery"
+		},
+		{
+			"path": "../materialize"
+		}
+	]
+}

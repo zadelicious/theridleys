@@ -1,0 +1,196 @@
+.album-detail-card {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 30px;
+  transition: background-color 0.3s;
+}
+.album-detail-cover {
+  aspect-ratio: 1;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.album-detail-cover i {
+  font-size: 4rem;
+  color: #444;
+}
+.album-detail-tag {
+  display: inline-block;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666;
+  border: 1px solid #ddd;
+  padding: 3px 8px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+.album-detail-info h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+  margin: 8px 0 5px;
+  transition: color 0.3s;
+}
+.album-year {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+.album-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+.tracklist {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+.tracklist h5 {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 12px;
+}
+.track-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f5f5;
+  transition: background-color 0.2s;
+}
+.track-item:hover {
+  background-color: #fafafa;
+}
+.track-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.track-number {
+  font-size: 0.8rem;
+  color: #999;
+  min-width: 20px;
+}
+.track-name {
+  font-size: 0.9rem;
+  color: #333;
+  transition: color 0.3s;
+}
+.spotify-link {
+  color: #1db954;
+  font-size: 1.3rem;
+  transition: all 0.2s;
+  padding: 5px;
+}
+.spotify-link:hover {
+  color: #1ed760;
+  transform: scale(1.1);
+}
+.single-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+.single-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.single-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.single-icon i {
+  font-size: 2.5rem;
+  color: #444;
+}
+.single-info {
+  flex-grow: 1;
+}
+.single-info h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 5px;
+  transition: color 0.3s;
+}
+.single-artist {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 3px;
+  transition: color 0.3s;
+}
+.single-year {
+  font-size: 0.75rem;
+  color: #999;
+  margin: 0;
+}
+.spotify-link-large {
+  color: #1db954;
+  font-size: 2rem;
+  transition: all 0.2s;
+  padding: 10px;
+  flex-shrink: 0;
+}
+.spotify-link-large:hover {
+  color: #1ed760;
+  transform: scale(1.1);
+}
+body.dark-mode .album-detail-card,
+body.dark-mode .single-card {
+  background-color: #1a1a1a;
+}
+body.dark-mode .album-detail-tag {
+  border-color: #444;
+  color: #aaa;
+}
+body.dark-mode .album-detail-info h3,
+body.dark-mode .single-info h4 {
+  color: #fff;
+}
+body.dark-mode .album-description,
+body.dark-mode .track-name,
+body.dark-mode .single-artist {
+  color: #aaa;
+}
+body.dark-mode .tracklist {
+  border-top-color: #333;
+}
+body.dark-mode .track-item {
+  border-bottom-color: #2a2a2a;
+}
+body.dark-mode .track-item:hover {
+  background-color: #1e1e1e;
+}
+body.dark-mode .single-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 600px) {
+  .single-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .single-icon {
+    margin: 0 auto;
+  }
+  .spotify-link-large {
+    margin-top: 10px;
+  }
+}

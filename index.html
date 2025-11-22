@@ -336,9 +336,16 @@
         $(".tabs").tabs();
         $(".tooltipped").tooltip();
         $(".scrollspy").scrollSpy();
+        if (localStorage.darkMode === "enabled") {
+          $("body").addClass("dark-mode");
+          $("#theme-icon").text("brightness_7");
+        }
         $("#theme-toggle, #mobile-theme-toggle").on("click", function (e) {
           e.preventDefault();
           $("body").toggleClass("dark-mode");
+          localStorage.darkMode = $("body").hasClass("dark-mode")
+            ? "enabled"
+            : "disabled";
           $("#theme-icon").text(
             $("body").hasClass("dark-mode") ? "brightness_7" : "brightness_4"
           );

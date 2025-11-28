@@ -1,0 +1,184 @@
+.events-section {
+    padding: 80px 0;
+    background: transparent;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    text-align: center;
+}
+
+header .overline {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.2rem;
+    margin: 0 0 12px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.event-list {
+    border: none;
+    background: transparent;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    padding: 28px 32px;
+    background: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #eee;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-item:hover {
+    background: #f8f8f8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.event-date {
+    min-width: 160px;
+    font-weight: 700;
+    font-size: 1.35rem;
+    color: #1db954;
+    text-align: left;
+}
+
+.event-info {
+    flex: 1;
+    margin-left: 24px;
+}
+
+.event-info h5 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: #222;
+    transition: color 0.3s;
+}
+
+.event-info p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.event-info .btn {
+    background: #1db954 !important;
+    color: #fff !important;
+    font-weight: 600;
+    text-transform: none;
+    margin-top: 12px;
+}
+
+.event-info .chip {
+    background: #333;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-left: 12px;
+}
+
+.upcoming .event-date {
+    color: #1db954;
+    font-weight: 800;
+}
+
+.past .event-date {
+    color: #999;
+}
+
+.past .event-info h5 {
+    color: #666;
+}
+
+.past .event-info p {
+    color: #888;
+}
+
+body.dark-mode header {
+    background: #000;
+}
+
+body.dark-mode .event-item {
+    background: #1a1a1a;
+    border-bottom-color: #333;
+}
+
+body.dark-mode .event-item:hover {
+    background: #222;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .event-info h5 {
+    color: #fff;
+}
+
+body.dark-mode .event-info p {
+    color: #aaa;
+}
+
+body.dark-mode .event-item {
+    border-bottom-color: #333;
+}
+
+body.dark-mode .past .event-info h5 {
+    color: #bbb;
+}
+
+body.dark-mode .past .event-info p {
+    color: #888;
+}
+
+body.dark-mode .event-info .chip {
+    background: #444;
+}
+
+@media (max-width: 992px) {
+    .event-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+    }
+
+    .event-info {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .event-date {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    .event-item {
+        padding: 20px;
+    }
+}

@@ -1,416 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="stylesheet" href="./materialize/css/materialize.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./discography.css" />
-    <title>Music - The Ridleys</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav-wrapper container">
-        <a href="index.html" class="brand-logo">The Ridleys</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-menu"
-          ><i class="material-icons">menu</i></a
-        >
-        <ul class="right hide-on-med-and-down nav-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="discography.html">Music</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li>
-            <a class="theme-toggle" id="theme-toggle"
-              ><i class="material-icons" id="theme-icon">brightness_4</i></a
-            >
-          </li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="./materialize/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./discography.css" />
+  <title>Music - The Ridleys</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">The Ridleys</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-menu"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down nav-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="discography.html">Music</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="theme-toggle" id="theme-toggle"><i class="material-icons" id="theme-icon">brightness_4</i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-menu">
+    <li>
+      <div class="user-view">
+        <h5>The Ridleys</h5><span>Filipino Indie Folk</span>
       </div>
-    </nav>
-    <ul class="sidenav" id="mobile-menu">
-      <li>
-        <div class="user-view">
-          <h5>The Ridleys</h5>
-          <span>Filipino Indie Folk</span>
-        </div>
-      </li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="members.html">Members</a></li>
-      <li><a href="discography.html">Discography</a></li>
-      <li><a href="lyrics.html">Lyrics</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><div class="divider"></div></li>
-      <li>
-        <a href="#" id="mobile-theme-toggle"
-          ><i class="material-icons left">brightness_4</i>Toggle Theme</a
-        >
-      </li>
-    </ul>
-    <header style="min-height: 50vh; padding: 120px 20px 60px">
-      <div class="hero-content">
-        <p class="overline">Discography</p>
-        <h1 style="font-size: 2.8rem">Our Music</h1>
-        <p>Explore our complete collection of albums and EPs</p>
-      </div>
-    </header>
-    <section class="section about-section">
-      <div class="container">
-        <div class="section-header center-align">
-          <p class="overline">Albums</p>
-          <h2>Full-Length Albums</h2>
-        </div>
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="album-detail-card">
-              <div class="album-detail-cover">
-                <i class="material-icons">album</i>
-              </div>
-              <div class="album-detail-info">
-                <span class="album-detail-tag">Album</span>
-                <h3>All These And More</h3>
-                <p class="album-year">2024</p>
-                <p class="album-description">
-                  The Ridleys' sophomore album featuring their signature folk
-                  sound with mature songwriting and production.
-                </p>
-                <div class="tracklist">
-                  <h5>Tracklist</h5>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">1</span>
-                      <span class="track-name">Be With You</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">2</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">3</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="discography.html">Discography</a></li>
+    <li><a href="lyrics.html">Lyrics</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="videos.html">Videos</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="#" id="mobile-theme-toggle"><i class="material-icons left">brightness_4</i>Toggle Theme</a></li>
+  </ul>
+
+  <header style="min-height:50vh;padding:120px 20px 60px">
+    <div class="hero-content">
+      <p class="overline">Discography</p>
+      <h1 style="font-size:2.8rem">Our Music</h1>
+      <p>All albums • Click any song to play on Spotify</p>
+    </div>
+  </header>
+
+  <section class="section about-section">
+    <div class="container">
+
+      <div class="album-detail-card">
+        <div class="album-detail-info">
+          <span class="album-detail-tag">Album • November 2025</span>
+          <h3>Until I Reach the Sun</h3>
+          <div class="tracklist">
+            <h5>Tracklist</h5>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">1</span><span class="track-name">Looking For</span>
+              </div><a href="https://open.spotify.com/track/5iMS7u88INdxqa9ndLHDh8?si=15093354c87b4e7b" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
             </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="album-detail-card">
-              <div class="album-detail-cover" style="background-color: #1a1a2e">
-                <i class="material-icons">album</i>
-              </div>
-              <div class="album-detail-info">
-                <span class="album-detail-tag">Album</span>
-                <h3>Reflections On Moonlight and Poetry</h3>
-                <p class="album-year">2019</p>
-                <p class="album-description">
-                  The debut album featuring a mix of new recordings and
-                  reimagined songs from the Aphrodite EP.
-                </p>
-                <div class="tracklist">
-                  <h5>Tracklist</h5>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">1</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">2</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">3</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">2</span><span class="track-name">It All Make
+                  Sense</span></div><a href="https://open.spotify.com/track/2pl7JMfmWp4fndHGhr4KP9?si=b73cf93532b6444c" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">3</span><span class="track-name">Let Me Go,
+                  Loneliness</span></div><a href="https://open.spotify.com/track/3H3e2B8u8elgdCS3qajcyg?si=caa792b658044263" target="_blank" class="spotify-link"><i
+                  class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">4</span><span class="track-name">When A Man Touches The
+                  Sun</span></div><a href="https://open.spotify.com/track/1N9XTtlT8iY679rESKigmu?si=e1b59a36f94a45ab" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">5</span><span class="track-name">Wonderland</span>
+              </div><a href="https://open.spotify.com/track/4dau2gwryBlkvqYAoosNvk?si=675eb64bb6ab4af8" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">6</span><span class="track-name">Prodigal's
+                  Anthem</span></div><a href="https://open.spotify.com/track/40stuWBoM6U140TGMPNo56?si=2dcf4455252d4a5a" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">7</span><span class="track-name">Home</span></div><a
+                href="https://open.spotify.com/track/5FNcOL4UioLSXbGhNWf9UZ?si=a855fbbfa8ea4cfe" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">8</span><span class="track-name">Summertown</span>
+              </div><a href="https://open.spotify.com/track/1eFbDTxauLx4PJH502PV3C?si=4279aeeb4c6d4bd4" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">9</span><span class="track-name">Constantly</span>
+              </div><a href=https://open.spotify.com/track/73DEMtErOYdBFtGBMyL9WJ?si=c1ea1e3c12d94647" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">10</span><span class="track-name">Running To
+                  Vancouver</span></div><a href=https://open.spotify.com/track/0tMdOVWd2HHJlHoMARhToS?si=4fc2a635eabb46c9" target="_blank" class="spotify-link"><i
+                  class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">11</span><span class="track-name">Milkyway</span></div>
+              <a href="https://open.spotify.com/track/0xHYCOHVyHdg320wL9XPQq?si=38e879d3cd5d4a32" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">12</span><span class="track-name">Lagoon</span></div><a
+                href="https://open.spotify.com/track/5rDPU5zW4hs8PK43KxMjRp?si=782cb620959347a0" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">13</span><span class="track-name">Icarus</span></div><a
+                href="https://open.spotify.com/track/62OymwJSf0b6e7WjyPm5uW?si=89c5aa8194504b38" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">14</span><span class="track-name">Return</span></div><a
+                href="https://open.spotify.com/track/2mQKVmebNu9isADY7X4FhZ?si=135f2215f4f04ecc" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">15</span><span class="track-name">Reprise</span></div>
+              <a href="https://open.spotify.com/track/1eQOKXKShAPS6OJ7kgX6UK?si=07529fcf7eb64734" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section members-section">
-      <div class="container">
-        <div class="section-header center-align">
-          <p class="overline">Extended Plays</p>
-          <h2>EPs</h2>
-        </div>
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="album-detail-card">
-              <div class="album-detail-cover" style="background-color: #2d3436">
-                <i class="material-icons">album</i>
+
+      <div class="album-detail-card">
+        <div class="album-detail-info">
+          <span class="album-detail-tag">Album • August 2024</span>
+          <h3>All These and More</h3>
+          <div class="tracklist">
+            <h5>Tracklist</h5>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">1</span><span class="track-name">Be With You</span>
               </div>
-              <div class="album-detail-info">
-                <span class="album-detail-tag">EP</span>
-                <h3>Until I Reach The Sun</h3>
-                <p class="album-year">2022–2023 (Vol. 1 & Vol. 2)</p>
-                <p class="album-description">
-                  A two-volume EP project showcasing the band's evolution and
-                  experimental sound.
-                </p>
-                <div class="tracklist">
-                  <h5>Tracklist - Vol. 1 (2022)</h5>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">1</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                  <h5 style="margin-top: 15px">Tracklist - Vol. 2 (2023)</h5>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">1</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
+              <a href="https://open.spotify.com/track/4179FSxWNhqupr6nRwJYkm?si=046e1fede56144d6" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
             </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="album-detail-card">
-              <div class="album-detail-cover" style="background-color: #4a4a4a">
-                <i class="material-icons">album</i>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">2</span><span class="track-name">Euphoria</span></div>
+              <a href="https://open.spotify.com/track/1qhQPs3p5DUU7NmXNoFD52?si=9fcb3bb22645473a" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">3</span><span class="track-name">Running Out Of
+                  Songs</span></div>
+              <a href="https://open.spotify.com/track/3emeJK0oQQnUo6jNMMstUX?si=706abe1206e0427f" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">4</span><span class="track-name">Strangest Love</span>
               </div>
-              <div class="album-detail-info">
-                <span class="album-detail-tag">EP</span>
-                <h3>Aphrodite</h3>
-                <p class="album-year">2016</p>
-                <p class="album-description">
-                  The debut EP that started it all. Released in March 2016,
-                  introducing The Ridleys' signature sound.
-                </p>
-                <div class="tracklist">
-                  <h5>Tracklist</h5>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">1</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                  <div class="track-item">
-                    <div class="track-info">
-                      <span class="track-number">2</span>
-                      <span class="track-name">Track Title</span>
-                    </div>
-                    <a
-                      href="#"
-                      class="spotify-link"
-                      data-spotify-url="SPOTIFY_LINK_HERE"
-                      title="Listen on Spotify"
-                      ><i class="fab fa-spotify"></i
-                    ></a>
-                  </div>
-                </div>
+              <a href="https://open.spotify.com/track/7plOlB2v47tU815XxP4ilz?si=98915bcb4d784e62" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">5</span><span class="track-name">Promised Land</span>
               </div>
+              <a href="https://open.spotify.com/track/1yD1eXL5Cn0NGWYLto2Daj?si=d70a9cc5ad9b4d71" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">6</span><span class="track-name">Vines</span></div>
+              <a href="https://open.spotify.com/track/4Fd4KPcUzcHPVAVPITQFAS?si=20a4016096c14c23" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">7</span><span class="track-name">Garden</span></div>
+              <a href="https://open.spotify.com/track/2nYMXLQBvqcz6UZcwv9IIX?si=3cfe4ef43aaa4148" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">8</span><span class="track-name">KYGM</span></div>
+              <a href="https://open.spotify.com/track/35gcCGz1NWIn58ycvUO0p5?si=f61ba358586e4c65" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">9</span><span class="track-name">Love Is</span></div>
+              <a href="https://open.spotify.com/track/4FmeVH5lIipcrOiEdv1Hd2?si=73dc9992d70043fe" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">10</span><span class="track-name">Someday</span></div>
+              <a href="https://open.spotify.com/track/1Qha6JOhv7VKIHzvn8I36I?si=8435b9bfff99458f" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section about-section">
-      <div class="container">
-        <div class="section-header center-align">
-          <p class="overline">Collaborations</p>
-          <h2>Singles & Features</h2>
-        </div>
-        <div class="row">
-          <div class="col s12 m8 offset-m2">
-            <div class="single-card">
-              <div class="single-icon">
-                <i class="material-icons">music_note</i>
-              </div>
-              <div class="single-info">
-                <h4>Intertwine</h4>
-                <p class="single-artist">The Ridleys x Over October</p>
-                <p class="single-year">Collaboration Single</p>
-              </div>
-              <a
-                href="#"
-                class="spotify-link-large"
-                data-spotify-url="https://open.spotify.com/track/76WyLLDWUAJZwzCThLxJpZ?si=f51bf5d8b4d0407c"
-                title="Listen on Spotify"
-                ><i class="fab fa-spotify"></i
-              ></a>
+
+      <div class="album-detail-card">
+        <div class="album-detail-info">
+          <span class="album-detail-tag">Album • 2019</span>
+          <h3>Reflections on Moonlight & Poetry</h3>
+          <div class="tracklist">
+            <h5>Tracklist</h5>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">1</span><span class="track-name">Aphrodite</span></div>
+              <a href="https://open.spotify.com/track/5pek4R29HVwMaWgzpV64f3?si=f096e967651c4acb" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">2</span><span class="track-name">DYWTBM</span></div><a
+                href="https://open.spotify.com/track/5klrcYpZWCDMhsuwzBctDz?si=428053c6f2f1498b" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">3</span><span class="track-name">Raconteur</span></div>
+              <a href="https://open.spotify.com/artist/03KZ3tIgA3DSCU4o8PahVG?si=897d0d6546af47be" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">4</span><span class="track-name">Meaningful
+                  Silence</span></div><a href="https://open.spotify.com/track/5RTpULEeuDksIYMUImzqlu?si=f7d62585fe514e03" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">5</span><span class="track-name">Stay</span></div><a
+                href="https://open.spotify.com/track/3swhBQAVz5apXK6rlDIsYZ?si=4741c240aa7d496a" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">6</span><span class="track-name">Rorschach Blots</span>
+              </div><a href="https://open.spotify.com/track/5sWBr9FMvp81fnxDYOi9nf?si=b39f145ff012488a" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">7</span><span class="track-name">Starlit Ocean</span>
+              </div><a href="https://open.spotify.com/track/6KBQfiqtH6DparDzykdUoc?si=9fadca0af3604d23" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">8</span><span class="track-name">Germany & Rome</span>
+              </div><a href="https://open.spotify.com/track/15Xljpp1dkkhlyX1MQhECP?si=2893fc2a91f04999" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">9</span><span class="track-name">Troubadour</span>
+              </div><a href="https://open.spotify.com/track/3uCMpUFwsw9aP9XjdpP5Ow?si=3e0d240df7e2460f" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">10</span><span class="track-name">Maybe</span></div><a
+                href="https://open.spotify.com/track/6WxUooBpbigS13ZKaibSj8?si=afeebcbc9c0b4459" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">11</span><span class="track-name">Take Our Time</span>
+              </div><a href="https://open.spotify.com/track/0o3apPXdlPEpcMDqHohdkD?si=5cefbcadcfb0437f" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="track-item">
+              <div class="track-info"><span class="track-number">12</span><span class="track-name">Cold Feet</span>
+              </div><a href="https://open.spotify.com/track/7oUWPf4I89jS8WqHDXEmol?si=dd6ff2d6975a42fc" target="_blank" class="spotify-link"><i class="fab fa-spotify"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m4">
-            <h5>About</h5>
-            <p>
-              Filipino indie/alternative folk band from Manila. Signed to
-              Underdog Music PH.
-            </p>
-            <div style="margin-top: 16px">
-              <a href="#" class="social-link"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col s6 m2 offset-m2">
-            <h5>Pages</h5>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="members.html">Members</a></li>
-              <li><a href="discography.html">Discography</a></li>
-              <li><a href="lyrics.html">Lyrics</a></li>
-            </ul>
-          </div>
-          <div class="col s6 m2">
-            <h5>More</h5>
-            <ul>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="videos.html">Videos</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="news.html">News</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+      <div class="single-card" style="margin: 50px auto; max-width: 700px;">
+        <div class="single-info">
+          <h4>Intertwine <small>with Over October</small></h4>
+          <p class="single-year">2023</p>
+        </div>
+        <a href="https://open.spotify.com/track/76WyLLDWUAJZwzCThLxJpZ?si=6f17ae193cb64cc3" target="_blank"
+          class="spotify-link-large"><i class="fab fa-spotify"></i></a>
+      </div>
+
+      <div class="single-card" style="margin: 50px auto; max-width: 700px;">
+        <div class="single-info">
+          <h4>Memory <small>with Sugarcane</small></h4>
+          <p class="single-year">2025</p>
+        </div>
+        <a href="https://open.spotify.com/track/3uO5ZkTrkjrIN4Qj3j0Y9j?si=2b4d7cc88eca4ad1" target="_blank"
+          class="spotify-link-large"><i class="fab fa-spotify"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <h5>About</h5>
+          <p>Filipino indie/alternative folk band from Manila. Signed to Underdog Music PH.</p>
+          <div style="margin-top:16px">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>© 2025 The Ridleys Fan Site. This is a fan-made website.</p>
+        <div class="col s6 m2 offset-m2">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="discography.html">Discography</a></li>
+            <li><a href="lyrics.html">Lyrics</a></li>
+          </ul>
+        </div>
+        <div class="col s6 m2">
+          <h5>More</h5>
+          <ul>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script src="./jquery-3.7.1.min.js"></script>
-    <script src="./materialize/js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-        $(".materialboxed").materialbox();
-        $(".parallax").parallax();
-        $(".tabs").tabs();
-        $(".tooltipped").tooltip();
-        $(".scrollspy").scrollSpy();
-        if (localStorage.darkMode === "enabled") {
-          $("body").addClass("dark-mode");
-          $("#theme-icon").text("brightness_7");
-        }
-        $("#theme-toggle, #mobile-theme-toggle").on("click", function (e) {
-          e.preventDefault();
-          $("body").toggleClass("dark-mode");
-          localStorage.darkMode = $("body").hasClass("dark-mode")
-            ? "enabled"
-            : "disabled";
-          $("#theme-icon").text(
-            $("body").hasClass("dark-mode") ? "brightness_7" : "brightness_4"
-          );
-        });
-        $(".spotify-link, .spotify-link-large").on("click", function (e) {
-          e.preventDefault();
-          var url = $(this).attr("data-spotify-url");
-          if (url && url !== "SPOTIFY_LINK_HERE") {
-            window.open(url, "_blank");
-          } else {
-            alert(
-              "Spotify link not available yet. Please add the link to data-spotify-url attribute."
-            );
-          }
-        });
+      <div class="footer-bottom">
+        <p>© 2025 The Ridleys Fan Site. This is a fan-made website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./jquery-3.7.1.min.js"></script>
+  <script src="./materialize/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".sidenav").sidenav();
+      if (localStorage.darkMode === "enabled") {
+        $("body").addClass("dark-mode");
+        $("#theme-icon").text("brightness_7");
+      }
+      $("#theme-toggle, #mobile-theme-toggle").on("click", function (e) {
+        e.preventDefault();
+        $("body").toggleClass("dark-mode");
+        localStorage.darkMode = $("body").hasClass("dark-mode") ? "enabled" : "disabled";
+        $("#theme-icon").text($("body").hasClass("dark-mode") ? "brightness_7" : "brightness_4");
       });
-    </script>
-  </body>
+      $(".spotify-link, .spotify-link-large").on("click", function (e) {
+        e.preventDefault();
+        window.open(this.href, "_blank");
+      });
+    });
+  </script>
+</body>
+
 </html>

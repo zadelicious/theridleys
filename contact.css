@@ -1,0 +1,22 @@
+.contact-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 12px 0;
+    color: #555;
+}
+
+body.dark-mode .contact-card {
+    background: #1a1a1a;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .contact-info p {
+    color: #aaa;
+}

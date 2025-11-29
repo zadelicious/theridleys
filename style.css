@@ -1,9 +1,4 @@
 /* Basic styles */
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Inter", sans-serif;
   background-color: #fafafa;
@@ -73,26 +68,45 @@ body.dark-mode nav .sidenav-trigger i {
 /* Sidenav */
 .sidenav {
   background-color: #fff;
+  width: 280px;
 }
 
 .sidenav li > a {
   color: #333;
   font-weight: 500;
+  padding: 0 32px;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.sidenav li > a i.material-icons {
+  margin-right: 16px;
 }
 
 .sidenav .user-view {
-  padding: 32px 16px 16px;
+  padding: 32px 32px 24px;
   background-color: #f5f5f5;
+  text-align: center;
 }
 
 .sidenav .user-view h5 {
-  margin: 0;
+  margin: 0 0 8px;
   color: #222;
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
 }
 
 .sidenav .user-view span {
   color: #888;
   font-size: 0.85rem;
+  display: block;
+}
+
+.sidenav .divider {
+  margin: 8px 0;
+  background-color: #e0e0e0;
 }
 
 body.dark-mode .sidenav {
@@ -106,6 +120,10 @@ body.dark-mode .sidenav .user-view h5 {
 
 body.dark-mode .sidenav .user-view {
   background-color: #252525;
+}
+
+body.dark-mode .sidenav .divider {
+  background-color: #333;
 }
 
 /* Header */
@@ -599,39 +617,80 @@ body.dark-mode .back-to-top:hover {
 /* Media queries */
 @media screen and (max-width: 992px) {
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   
   .btn-outline-minimal {
     margin-left: 0;
     margin-top: 10px;
   }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  .quick-link {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   header {
     min-height: auto;
-    padding: 100px 20px 50px;
+    padding: 80px 20px 40px;
+  }
+  
+  .hero-content {
+    padding-top: 40px;
   }
   
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
   }
   
   .hero-content p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+  
+  .hero-content .btn-minimal,
+  .hero-content .btn-outline-minimal {
+    width: 100%;
+    margin: 8px 0 0 0;
+    display: block;
   }
   
   .section {
     padding: 40px 0;
   }
   
+  .section-header {
+    margin-bottom: 30px;
+  }
+  
   .section-header h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   
   .quick-links {
     padding: 30px 0;
+  }
+  
+  .quick-link {
+    padding: 24px 20px;
+    margin-bottom: 12px;
+  }
+  
+  .quick-link h5 {
+    font-size: 1rem;
+    margin: 8px 0 4px;
+  }
+  
+  .quick-link span {
+    font-size: 0.8rem;
   }
   
   .back-to-top {
@@ -644,5 +703,32 @@ body.dark-mode .back-to-top:hover {
   .back-to-top i {
     font-size: 1.4rem;
     line-height: 50px;
+  }
+  
+  nav .brand-logo {
+    font-size: 1.15rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .sidenav-trigger {
+    margin-left: 0;
+  }
+  
+  .about-text {
+    font-size: 0.92rem;
+    line-height: 1.8;
+  }
+  
+  .member-item {
+    padding: 20px 10px;
+  }
+  
+  .album-item {
+    margin-bottom: 20px;
+  }
+  
+  .news-item {
+    padding: 16px 0;
   }
 }

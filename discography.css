@@ -56,6 +56,7 @@
   border-top: 1px solid #eee;
   padding-top: 15px;
   margin-top: 15px;
+  position: relative;
 }
 
 .tracklist h5 {
@@ -166,6 +167,72 @@
   color: #1ed760;
 }
 
+/* Show More functionality for tracklist - Simple CSS */
+.show-more-checkbox {
+  display: none;
+}
+
+.track-item.extra-track {
+  display: none;
+}
+
+.show-more-checkbox:checked ~ .track-item.extra-track {
+  display: flex;
+}
+
+.show-more-label {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.show-more-label .btn-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #666;
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.show-more-label:hover .btn-wrapper {
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.show-more-text {
+  display: inline;
+}
+
+.show-less-text {
+  display: none;
+}
+
+.show-more-checkbox:checked ~ .show-more-label .show-more-text {
+  display: none;
+}
+
+.show-more-checkbox:checked ~ .show-more-label .show-less-text {
+  display: inline;
+}
+
+.show-more-label i {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.show-more-checkbox:checked ~ .show-more-label i {
+  transform: rotate(180deg);
+}
+
+/* Dark mode styles */
 body.dark-mode .album-detail-card,
 body.dark-mode .single-card {
   background-color: #1a1a1a;
@@ -201,6 +268,15 @@ body.dark-mode .track-item:hover {
 
 body.dark-mode .single-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .show-more-label .btn-wrapper {
+  color: #aaa;
+}
+
+body.dark-mode .show-more-label:hover .btn-wrapper {
+  color: #fff;
+  background-color: #2a2a2a;
 }
 
 @media screen and (max-width: 600px) {

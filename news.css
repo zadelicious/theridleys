@@ -5,7 +5,6 @@
 .news-item {
     padding: 30px 0;
     border-bottom: 1px solid #eee;
-    transition: all 0.3s;
 }
 
 .news-item:last-child {
@@ -25,14 +24,12 @@
     font-weight: 600;
     color: #222;
     margin: 0 0 12px;
-    transition: color 0.3s;
 }
 
 .news-item p {
     font-size: 0.95rem;
     color: #555;
     line-height: 1.8;
-    transition: color 0.3s;
 }
 
 body.dark-mode .news-item {

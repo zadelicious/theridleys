@@ -2,13 +2,13 @@
   background-color: #fff;
   padding: 30px;
   margin-bottom: 30px;
-  transition: all 0.3s;
   border: 1px solid #f0f0f0;
 }
+
 .member-profile-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
 .member-profile-avatar {
   width: 120px;
   height: 120px;
@@ -18,42 +18,47 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s;
 }
+
 .member-profile-avatar i {
   font-size: 3rem;
   color: #999;
 }
+
 .member-profile-avatar.small-avatar {
   width: 80px;
   height: 80px;
 }
+
 .member-profile-avatar.small-avatar i {
   font-size: 2rem;
 }
+
 .member-profile-info {
   text-align: center;
 }
+
 .member-profile-info h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #222;
   margin: 0 0 8px;
-  transition: color 0.3s;
 }
+
 .member-role {
   font-size: 0.9rem;
   color: #888;
   margin: 0 0 15px;
   font-weight: 500;
 }
+
 .member-description {
   font-size: 0.9rem;
   color: #666;
   line-height: 1.7;
   margin-bottom: 20px;
-  transition: color 0.3s;
 }
+
 .member-details {
   display: flex;
   flex-direction: column;
@@ -62,6 +67,7 @@
   padding-top: 20px;
   border-top: 1px solid #f0f0f0;
 }
+
 .member-detail-item {
   display: flex;
   align-items: center;
@@ -69,12 +75,13 @@
   gap: 8px;
   font-size: 0.85rem;
   color: #777;
-  transition: color 0.3s;
 }
+
 .member-detail-item i {
   font-size: 1.1rem;
   color: #999;
 }
+
 .management-card,
 .alumni-card {
   display: flex;
@@ -82,83 +89,95 @@
   text-align: left;
   gap: 25px;
 }
+
 .management-card .member-profile-avatar,
 .alumni-card .member-profile-avatar {
   margin: 0;
-  flex-shrink: 0;
 }
+
 .management-card .member-profile-info,
 .alumni-card .member-profile-info {
   text-align: left;
 }
-.alumni-card {
-  opacity: 0.85;
-}
+
 .band-quote {
   background-color: #fff;
   padding: 40px 30px;
   text-align: center;
   position: relative;
   border-left: 4px solid #111;
-  transition: all 0.3s;
 }
+
 .quote-icon {
   font-size: 3rem;
   color: #e0e0e0;
   margin-bottom: 15px;
 }
+
 .band-quote p {
   font-size: 1.1rem;
   color: #555;
   line-height: 1.8;
   font-style: italic;
   margin: 0 0 15px;
-  transition: color 0.3s;
 }
+
 .quote-author {
   font-size: 0.85rem;
   color: #999;
   font-weight: 500;
   letter-spacing: 1px;
 }
+
 body.dark-mode .member-profile-card {
   background-color: #1a1a1a;
   border-color: #2a2a2a;
 }
+
 body.dark-mode .member-profile-card:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
 body.dark-mode .member-profile-avatar {
   background-color: #333;
 }
+
 body.dark-mode .member-profile-info h3 {
   color: #fff;
 }
+
 body.dark-mode .member-role,
 body.dark-mode .member-description,
 body.dark-mode .member-detail-item {
   color: #aaa;
 }
+
 body.dark-mode .member-details {
   border-top-color: #333;
 }
+
 body.dark-mode .band-quote {
   background-color: #1a1a1a;
   border-left-color: #fff;
 }
+
 body.dark-mode .band-quote p {
   color: #aaa;
 }
+
 @media screen and (max-width: 600px) {
+
   .management-card,
   .alumni-card {
     flex-direction: column;
     text-align: center;
   }
+
   .management-card .member-profile-info,
   .alumni-card .member-profile-info {
     text-align: center;
   }
+
   .member-profile-avatar.small-avatar {
     margin: 0 auto;
   }

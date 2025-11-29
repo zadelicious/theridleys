@@ -21,7 +21,6 @@
     font-weight: 600;
     color: #222;
     font-size: 1.1rem;
-    transition: color 0.3s;
 }
 
 body.dark-mode .video-title {

@@ -37,8 +37,8 @@
     box-shadow: 0 1px 0 0 #111;
 }
 
-.input-field input:focus + label,
-.input-field textarea.materialize-textarea:focus + label {
+.input-field input:focus+label,
+.input-field textarea.materialize-textarea:focus+label {
     color: #111;
 }
 
@@ -95,8 +95,8 @@ body.dark-mode .input-field textarea.materialize-textarea:focus {
     box-shadow: 0 1px 0 0 #fff;
 }
 
-body.dark-mode .input-field input:focus + label,
-body.dark-mode .input-field textarea.materialize-textarea:focus + label {
+body.dark-mode .input-field input:focus+label,
+body.dark-mode .input-field textarea.materialize-textarea:focus+label {
     color: #fff;
 }
 

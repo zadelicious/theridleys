@@ -297,6 +297,11 @@
         </div>
       </div>
     </footer>
+
+    <a href="#" class="back-to-top">
+        <i class="material-icons">arrow_upward</i>
+    </a>
+    
     <script src="./jquery-3.7.1.min.js"></script>
     <script src="./materialize/js/materialize.min.js"></script>
     <script>
@@ -322,6 +327,22 @@
           );
         });
       });
+
+      $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $(".back-to-top").fadeIn();
+                } else {
+                    $(".back-to-top").fadeOut();
+                }
+            });
+
+            $(".back-to-top").click(function (e) {
+                e.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, 600);
+            });
+        });
     </script>
   </body>
 </html>

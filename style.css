@@ -1,4 +1,9 @@
 /* Basic styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #fafafa;
@@ -547,6 +552,50 @@ footer ul li a:hover {
   color: #fff;
 }
 
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 50%;
+  display: none;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.back-to-top:hover {
+  background-color: #333;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  color: #fff;
+}
+
+.back-to-top i {
+  font-size: 1.6rem;
+  line-height: 55px;
+  display: block;
+  text-align: center;
+}
+
+body.dark-mode .back-to-top {
+  background-color: #fff;
+  color: #111;
+}
+
+body.dark-mode .back-to-top:hover {
+  background-color: #e0e0e0;
+  color: #111;
+}
+
 /* Media queries */
 @media screen and (max-width: 992px) {
   .hero-content h1 {
@@ -583,5 +632,17 @@ footer ul li a:hover {
   
   .quick-links {
     padding: 30px 0;
+  }
+  
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .back-to-top i {
+    font-size: 1.4rem;
+    line-height: 50px;
   }
 }

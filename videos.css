@@ -30,3 +30,14 @@ body.dark-mode .video-title {
 body.dark-mode .video-wrapper {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 600px) {
+  .video-wrapper {
+    margin-bottom: 25px;
+  }
+  
+  .video-title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}

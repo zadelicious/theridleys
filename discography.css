@@ -167,7 +167,6 @@
   color: #1ed760;
 }
 
-/* Show More functionality for tracklist - Simple CSS */
 .show-more-checkbox {
   display: none;
 }
@@ -186,6 +185,7 @@
   margin-top: 15px;
   padding-top: 15px;
   cursor: pointer;
+  user-select: none;
 }
 
 .show-more-label .btn-wrapper {
@@ -232,7 +232,6 @@
   transform: rotate(180deg);
 }
 
-/* Dark mode styles */
 body.dark-mode .album-detail-card,
 body.dark-mode .single-card {
   background-color: #1a1a1a;

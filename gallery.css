@@ -27,3 +27,9 @@ body.dark-mode .gallery-item {
 body.dark-mode .gallery-item:hover {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
 }
+
+@media screen and (max-width: 600px) {
+  .gallery-item {
+    margin-bottom: 15px;
+  }
+}
